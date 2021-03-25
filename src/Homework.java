@@ -1,16 +1,17 @@
 public class Homework {
 
     public static void main(String[] args) {
-        System.out.println(sumaNumerelor());
+              int[] numbers= {24, 36, 58, 44, 65, 88, 92};
+        System.out.println(sumaNumerelor(numbers));
         System.out.println(elementeleImpare());
         System.out.println(numereleIntregi());
 
 
     }
 
-    public static int sumaNumerelor() {
+    public static int sumaNumerelor(int numbers[]) {
         int sum = 0;
-        int numbers[] = {24, 36, 58, 44, 65, 88, 92};
+   
         for (int i = 0; i < numbers.length; i++) {
             sum += numbers[i];
         }
@@ -31,15 +32,13 @@ public class Homework {
 
     }
 
-    public static int[] numereleIntregi() {
-        int[][] numereIntregi = {{4, 7, 112, 10, 74, 27, 36, 88}, {87}};
+    public static int[] numereleIntregi(int nr, int[] numbere) {
+        int[] numereIntregi = {4, 7, 112, 10, 74, 27, 36, 88};
+        int nr=87;
 
-        for (int primeleNumere : numereIntregi[0]) {
-            for (int alDoileaNumar : numereIntregi[1]) {
-                if (primeleNumere > alDoileaNumar) {
-
-                }
-
+        for (int number : numbers) {
+            if (number >nr ) {
+                System.out.println(number);
             }
         }
         return numereIntregi[0];
